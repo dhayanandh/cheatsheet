@@ -50,7 +50,7 @@ for more details - https://tecadmin.net/install-oracle-java-11-on-ubuntu-16-04-x
  - wget https://updates.jenkins-ci.org/download/war/2.162/jenkins.war ( installs 2.162 version, if you want any other version to be installed visit https://updates.jenkins-ci.org/download/war/ download particular version )
  - java -jar jenkins.war ( default runs on 8080 port ) 
  - java -jar jenkins.war --httpPort=5000 ( if you want run on any other port use this, in my case its 5000 port ) 
- - nohup java -jar jenkins.jar & ( to run jenkins process in background )
+ - nohup java -jar jenkins.war & ( to run jenkins process in background )
  
 ## Jenkins as a service 
  - wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
